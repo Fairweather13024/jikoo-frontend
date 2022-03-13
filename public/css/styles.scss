@@ -1,0 +1,178 @@
+// General
+html, body {
+    max-width: 100%;
+    overflow-x: initial;
+  }
+
+  $white-jk: #FFFFFF;
+  $border-jk: #E2E2E2;
+  $black-jk:#222222;
+  $main-bg:#F9F9F9;
+  $primary-jk:#025928;
+  $text-sub-heading:#444444;
+  $primary-2-jk:#3C8C30;
+  $text-body:#666666;
+  $primary-3-jk:#D96704;
+  :export {
+    white-jk: $white-jk;
+    border-jk: $border-jk;
+    black-jk:$black-jk;
+    main-bg:$main-bg;
+    primary-jk:$primary-jk;
+    text-sub-heading:$text-sub-heading;
+    primary-2-jk:$primary-2-jk;
+    text-body:$text-body;
+    primary-3-jk:$primary-3-jk;
+}
+
+  .center-text{
+    text-align:center;
+  }
+  .left-text{
+    text-align: left;
+  }
+  .left-margin-80{
+    margin-left:80px;
+  }
+
+  .mt-1{
+    margin-top: 5px !important;
+  }
+  a {
+    color: unset !important;
+    text-decoration: none !important;
+  }
+
+  .logo{
+    margin-top:10px !important;
+    padding:10px !important;
+    @media (max-width: 576px ) {
+        padding: 0;
+        height: 48px !important;
+        width: 100px !important;
+   }
+  }
+  .logo-div{
+    padding:10px;
+    margin-right:auto;
+  
+  }
+  .mr-3{
+    margin-right: 10px;
+  }
+  .x-fade-green{
+    background-image: linear-gradient(to right, #74d34c, #245c0c);
+    color: white;
+  }
+  
+  .y-fade-green{
+    background-image: linear-gradient(to bottom, #74d34c, #245c0c) !important;
+    color: white;
+  }
+  .jumbotron {
+    background-image: linear-gradient(to right, #74d34c, #245c0c);
+    color: white;
+    height: 5em;
+  }
+  
+  .flex-center{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .flex-right{
+    display: flex !important;
+    align-items: center !important;
+    justify-items: right !important;
+  }
+  .nav-link-color-white{
+    color: #fff !important;
+    font-weight: 600;
+  }
+  .w-100{
+    width: 100% !important;
+  }
+  .nav-link.active{
+    background-color: $primary-jk !important;
+  }
+  .h-100{
+    height:100vh !important;
+  }
+
+  .navRegisterBtn{
+    background-color: $primary-jk;
+    border: 2px solid $border-jk;
+    color: $white-jk;
+      width: 157px;
+      height: 50px;
+      display: grid !important;
+      margin-top: auto !important;
+      margin-bottom: auto !important;
+  }
+  .registerLink{
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1;
+  }
+  .loginContainer{
+      margin: 5% 5% 5% 35%;
+      width: 500px;
+  }
+  .header1{
+      font-weight: 700;
+      size: 40px;
+      line-height: 65px;
+  }
+  .primaryBtn{
+      width: 250px;
+      height: 50px !important;
+      border-radius: 5%;
+  }
+  .or{
+    width: 40px;
+    padding: 0px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: -28.5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff !important;
+    opacity: 1;
+    border-radius: 5px;
+    
+  }
+
+  .labels{
+    margin:0px 0px -10px 7px;
+    float: left !important;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0px 10px;
+  }
+
+  .loginBtn{
+    background-color: $primary-jk !important;
+    border: 2px solid $border-jk !important;
+    color: $white-jk !important;
+    width: 257px !important;
+    height: 50px !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroArrow {
+    width: 15px;
+    padding-left: 20px;
+}
+
+.text-secondary{
+    color: $text-body !important;
+}
+.sub-heading{
+    color: $text-sub-heading !important;
+}
+
+.loginImageContainer{
+    background-color: $main-bg;
+}
