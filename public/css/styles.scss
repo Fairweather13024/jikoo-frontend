@@ -24,15 +24,24 @@ html, body {
     text-body:$text-body;
     primary-3-jk:$primary-3-jk;
 }
-
+  .d-flex{
+    display: flex !important;
+    align-items: center !important;
+  }
   .center-text{
     text-align:center;
   }
   .left-text{
     text-align: left;
   }
+  .green{
+    color: $primary-jk !important;
+  }
   .left-margin-80{
     margin-left:80px;
+  }
+  .font-25{
+    font-size: 25px !important;
   }
 
   .mt-1{
@@ -81,6 +90,12 @@ html, body {
     justify-content: center !important;
   }
   
+  .float-right{
+    float: right !important;
+  }
+  .float-left{
+    float: left !important;
+  }
   .flex-right{
     display: flex !important;
     align-items: center !important;
@@ -178,7 +193,7 @@ html, body {
 }
 
 .registerContainer{
-  margin:10% 15% 10% 15%  !important;
+  margin:5% 15% 10% 15%  !important;
   border-radius: 20px !important;
   box-shadow: 5px 5px 25px 0 #dfdddd !important;
   width: 1000px;
@@ -207,4 +222,171 @@ html, body {
 }
 .lifted{
   z-index:1000 !important;
+}
+
+.sliderMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding-top: 3rem;
+  height: 100%;
+  background-color: $white-jk;
+  width: 250px;
+
+  .ant-tabs-tab-btn{
+      color:#fff !important;
+  }
+  .ant-tabs{
+      color:#fff !important;
+  }
+  .ant-tabs-nav {
+  //  background-color: #3c9c1c;
+   
+   padding: 16px 0;
+   width: 220px !important;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active.ant-tabs-tab-btn{
+      color:#fff !important;
+  }
+  .ant-tabs-nav .ant-tabs-tab:hover {
+   color: #ffffff !important;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+   color: #fff !important;
+   background-color: $primary-jk !important;
+  }
+  .ant-tabs .ant-tabs-left-bar .ant-tabs-ink-bar {
+   left: 1px;
+  }
+  .ant-tabs-ink-bar {
+   background-color: #ffffff;
+  }
+  .ant-tabs .ant-tabs-left-bar .ant-tabs-tab,
+  .ant-tabs .ant-tabs-right-bar .ant-tabs-tab {
+   padding: 10px 0;
+   padding-left: 10px;
+   padding-right: 50px;
+   @media (max-width: 400px) {
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 50px;
+   }
+  }
+ }
+ .sliderIcon {
+ 
+  width: 20px;
+  margin: 0 10px;
+  @media (max-width: 400px) {
+   height: 80px;
+   width: 16px;
+   transform: translateY(-30px);
+  }
+ }
+
+ .footerMain2Heading{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width:100%;
+}
+.rightNavHeading{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width:100%;
+}
+.footerMain2Heading1{
+  font-size: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+.footerMain2Heading2{
+  font-size: 20px;
+  color: #000000;
+}
+
+.sliderTab {
+  // margin-top: 60px;
+  color:$black-jk;
+  width: 220px;
+
+  @media (max-width: 400px) {
+   margin-top: 0px;
+  }
+ }
+
+
+.sliderTab.active{
+  border-right: 3px solid  $primary-jk !important;
+}
+.sliderWrapper{
+  width: 250px;
+}
+.sliderLeftNav{
+  padding: 20px 0px;
+  min-height: 100vh;
+}
+.sliderNavBtnsContainer{
+  height: 75vh;
+}
+.sliderMainDetailsContainer{
+  height:300px;
+  display: flex;
+  flex-direction: column;
+
+}
+.sliderMainDetails{
+  height:150px;
+}
+.sliderCaretClose{
+  margin-left:230px;
+  font-size: 20px;
+  padding: 10px;
+}
+.sliderCaretOpen{
+  margin-left:60px;
+  font-size: 20px;
+  padding: 10px;
+}
+.text-body{
+  color: $text-body !important;
+  font-weight: 300;
+}
+.sliderMainMinified{
+  width:80px;
+  height: 100vh;
+  background-color: $white-jk;
+}
+
+.siderOpened{
+  width: 250px !important;
+  max-width: 250px !important;
+  min-width: 250px !important;
+  flex: 0 0 250px !important;
+  background-color: $white-jk !important;
+}
+.siderClosed{
+  width: 80px !important;
+  max-width: 80px !important;
+  min-width: 80px !important;
+  flex: 0 0 80px !important;
+  background-color: $white-jk !important;
+}
+
+.layoutNav{
+  background-color: $white-jk !important;
+}
+
+.fundraiserdashboardNavtabWrapper{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: right;
+  overflow-x: hidden;
+  padding-right: 20px;
+}
+
+.notificationAvatar{
+  vertical-align: 0.125em !important;
+  font-size: 20px;
 }
