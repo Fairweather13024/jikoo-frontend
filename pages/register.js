@@ -2,6 +2,7 @@ import {useState, useContext, useEffect} from 'react'
 import {Context } from '../context'
 import axios from 'axios'
 import {toast} from 'react-toastify'
+import TopNav from "../components/TopNav"
 import {SyncOutlined} from '@ant-design/icons'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
@@ -31,7 +32,7 @@ const Register =()=>{
 
     useEffect(() => {
         if(user !== null){
-            router.push('/')
+            
         }
         getCountry()
     }, [user])
@@ -90,6 +91,7 @@ const Register =()=>{
       <meta name="google-site-verification" content=""/>
     </Head>
         <div className='w-100' style={{display:'grid', margin:'auto'}}>
+          <TopNav/>
           <Card className="registerContainer" >
             <div className='w-100'>
               <h1 className="header1">Create your account!</h1>

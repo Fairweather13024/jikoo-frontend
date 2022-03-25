@@ -2,12 +2,14 @@ import { useState, useContext, useEffect} from "react"
 import {Context } from '../context'
 import axios from 'axios'
 import {useRouter} from 'next/router'
+import TopNav from "../components/TopNav"
 import {toast} from 'react-toastify'
 import { Col, Button } from "antd"
 import Link from 'next/link'
 import {SyncOutlined} from '@ant-design/icons'
 import Image from 'next/image'
 import Head from 'next/head'
+
 
 
 const login = () => {
@@ -22,7 +24,7 @@ const login = () => {
     
     useEffect(()=> {
         if(user !== null) {
-            router.push('/')
+            
         }
     }, [user])
  
@@ -48,6 +50,7 @@ const login = () => {
 
   return (
     <div className='w-100 row'>
+        <TopNav/>
         <Col lg={12} s={24}>
             <div className="loginContainer">
                 <div className="w-100">
