@@ -1,6 +1,5 @@
 //import { hotjar } from 'react-hotjar'
 // import * as gtag from '../lib/gtag'
-import TopNav from "../components/TopNav"
 import {ToastContainer} from 'react-toastify'
 import {Provider} from '../context'
 import Head from 'next/head'
@@ -79,8 +78,7 @@ function MyApp({Component, pageProps}) {
     </Head>
     <Provider>
         <ToastContainer />
-            <TopNav/>
-        <Component {...pageProps}/>
+         <Component {...pageProps}/>
     </Provider>
     </>
     )
