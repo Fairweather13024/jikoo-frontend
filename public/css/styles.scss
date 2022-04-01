@@ -125,6 +125,10 @@ html, body {
       margin-top: auto !important;
       margin-bottom: auto !important;
   }
+  .ant-menu-item-selected{
+    background-color: $white-jk !important;
+    // border: 1px solid $primary-jk !important;
+  }
   .registerLink{
     padding: 0 !important;
     margin: 0 !important;
