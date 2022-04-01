@@ -54,9 +54,9 @@ const Home = ()=> {
                             </Link>
                         </div>
                         <div className='d-flex'>
-                            <Avatar src={user && user.image}/>
+                            {user && user.image ? (<Avatar src={user && user.image}/>) : (<Avatar src="https://eduzuka-bucket.s3.us-east-2.amazonaws.com/MpHwVvajw8xx3_yTGVqq4.jpeg"/>)}
                             <div style={{display:'flex', flexDirection:'column', height:'60px', margin:'0px 10px'}}>
-                                <h2 style={{ fontSize:'16px', fontWeight:'500', padding:'0.3rem 0'}}>{user && user.name}</h2>
+                                {user && user.name ? (<h2 style={{ fontSize:'16px', fontWeight:'500', padding:'0.3rem 0'}}>{user && user.name}</h2>) : (<h2 style={{ fontSize:'16px', fontWeight:'500', padding:'0.3rem 0'}}>Sample User's Full Name</h2>)}
                                 {user && user.role == 'fundraiser' ? (<span style={{lineHeight:'15px', fontSize:'13px', fontWeight:'200', margin:'0px !important', padding:'0px !important'}}>Fundraiser</span>) : (<span style={{lineHeight:'15px', fontSize:'13px', fontWeight:'200', margin:'0px !important', padding:'0px !important'}}>Fundraiser</span>)}
                             </div>
                            
@@ -69,9 +69,11 @@ const Home = ()=> {
                     <Row lg={24} className='p-5'>
                         <div className='w-100 d-flex mb-5'>
                             <div className='d-flex p-3' style={{height:'100px', width:"1200px"}}>
-                                <Avatar src={user && user.image} size={80}/>
+                                {user && user.image ? (<Avatar src={user && user.image} size={80}/>) : (<Avatar src="https://eduzuka-bucket.s3.us-east-2.amazonaws.com/MpHwVvajw8xx3_yTGVqq4.jpeg" size={80}/>)}
                                 <div style={{display:'flex', flexDirection:'column', height:'80px', margin:'0px 10px'}}>
-                                    <div style={{display:'flex', alignItems:'center', fontSize:'28px', fontWeight:'600', padding:'0.3rem 0'}}>Hello, <div style={{ fontSize:'28px', fontWeight:'700', padding:'0.3rem 0',display:'flex', alignItems:'center',}}>{user && user.name}</div></div>
+                                    {user && user.name ? (<div style={{display:'flex', alignItems:'center', fontSize:'28px', fontWeight:'600', padding:'0.3rem 0'}}>Hello, <div style={{ fontSize:'28px', fontWeight:'700', padding:'0.3rem 0',display:'flex', alignItems:'center',}}>{user && user.name}</div></div>
+                                    ) : (<div style={{display:'flex', alignItems:'center', fontSize:'28px', fontWeight:'600', padding:'0.3rem 0'}}>Hello, <div style={{ fontSize:'28px', fontWeight:'700', padding:'0.3rem 0',display:'flex', alignItems:'center',}}>Sample User's Full Name</div></div>
+                                    )}
                                     <span style={{lineHeight:'15px', fontSize:'13px', fontWeight:'200', margin:'0px !important', padding:'0px !important'}}>London, United Kingdom</span>
                                 </div>
                             </div>
